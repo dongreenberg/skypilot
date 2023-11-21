@@ -1,7 +1,7 @@
 .. _cli:
 
 Command Line Interface
-==========================
+======================
 
 Core CLI
 ---------
@@ -69,23 +69,6 @@ Managed Spot Jobs CLI
    :prog: sky spot logs
    :nested: full
 
-Interactive Node CLI
------------------------
-
-.. click:: sky.cli:cpunode
-   :prog: sky cpunode
-   :nested: full
-
-.. _sky-gpunode:
-.. click:: sky.cli:gpunode
-   :prog: sky gpunode
-   :nested: full
-
-.. click:: sky.cli:tpunode
-   :prog: sky tpunode
-   :nested: full
-
-
 Storage CLI
 ------------
 
@@ -97,8 +80,8 @@ Storage CLI
    :prog: sky storage delete
    :nested: full
 
-Utils: ``show-gpus``, ``check``
----------------------------------------
+Utils: ``show-gpus``/``check``/``cost-report``
+-------------------------------------------------
 
 
 .. click:: sky.cli:show_gpus
@@ -107,4 +90,8 @@ Utils: ``show-gpus``, ``check``
 
 .. click:: sky.cli:check
    :prog: sky check
+   :nested: full
+
+.. click:: sky.cli:cost_report
+   :prog: sky cost-report
    :nested: full
